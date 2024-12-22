@@ -1,4 +1,5 @@
 import 'package:flary/screens/auth/signup/page.dart';
+import 'package:flary/screens/onboarding/page.dart';
 import 'package:flutter/material.dart';
 import 'package:flary/screens/auth/signin/page.dart';
 
@@ -12,8 +13,9 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Auth Demo',
-      home: const SignInPage(),
+      title: 'Flary',
+      home: const OnBoarding(),
+      theme: ThemeData(brightness: Brightness.dark, useMaterial3: true),
       routes: {
         '/signin': (context) => const SignInPage(),
         '/signup': (context) => const SignUpPage(),
