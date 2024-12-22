@@ -34,6 +34,11 @@ class SignInPage extends StatelessWidget {
               },
               child: const Text('Entrar'),
             ),
+            const Text('Não Tem Uma Conta?', //só lembrando que ainda falta adicionar a função do onPressed que leve pro SignUp
+              style: TextStyle(
+                decoration: TextDecoration.underline,
+              ),
+            ),
           ],
         ),
       ),
