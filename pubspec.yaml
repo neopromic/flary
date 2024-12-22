@@ -19,6 +19,22 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/fonts/
+
+  fonts:
+   - family: Mulish
+     fonts:
+       - asset: assets/fonts/Mulish-Regular.ttf
+       - asset: assets/fonts/Mulish-Bold.ttf
+       - asset: assets/fonts/Mulish-SemiBold.ttf
+       - asset: assets/fonts/Mulish-Light.ttf
+       - asset: assets/fonts/Mulish-ExtraLight.ttf
+       - asset: assets/fonts/Mulish-Medium.ttf
+       - asset: assets/fonts/Mulish-Black.ttf
+       - asset: assets/fonts/Mulish-ExtraBold.ttf
+       - asset: assets/fonts/Mulish-Thin.ttf
 
 flutter_native_splash:
   # This package generates native code to customize Flutter's default white native splash screen

@@ -11,12 +11,12 @@ class SignInPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text('Bem-vindo de volta ao Flary!',
-              style: TextStyle(
-                fontSize: 35,
-                fontWeight: FontWeight.bold),
+            const Text(
+              'Bem-vindo de volta ao Flary!',
+              style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
             ),
-            const Text('   Olha quem apareceu! Bora botar pra quebrar e fazer isso aqui acontecer de novo!'),
+            const Text(
+                'Olha quem apareceu! Bora botar pra quebrar e fazer isso aqui acontecer de novo!'),
             const TextField(
               decoration: InputDecoration(labelText: 'Email'),
             ),
@@ -34,7 +34,8 @@ class SignInPage extends StatelessWidget {
               },
               child: const Text('Entrar'),
             ),
-            const Text('Não Tem Uma Conta?', //só lembrando que ainda falta adicionar a função do onPressed que leve pro SignUp
+            const Text(
+              'Não Tem Uma Conta?', //só lembrando que ainda falta adicionar a função do onPressed que leve pro SignUp
               style: TextStyle(
                 decoration: TextDecoration.underline,
               ),
