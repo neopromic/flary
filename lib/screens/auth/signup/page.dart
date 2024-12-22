@@ -12,6 +12,12 @@ class SignUpPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            const Text(
+              'E aí :)',
+              style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
+            ),
+            const Text(
+                'Que daora ter você aqui! O Flary é o lugar pra trocar ideia e criar suas comunidades, sempre com segurança e privacidade. Se joga, entra num grupo ou cria o seu. Suas conversas estão seguras!'),
             const TextField(
               decoration: InputDecoration(labelText: 'Nome'),
             ),
@@ -31,8 +37,10 @@ class SignUpPage extends StatelessWidget {
               },
               child: const Text('Cadastrar'),
             ),
-               const Text('Já Tem Uma Conta?', //só lembrando que ainda falta adicionar a função do onPressed que leve pro SignIn
+            const Text(
+              'Já Tem Uma Conta?', //só lembrando que ainda falta adicionar a função do onPressed que leve pro SignIn
               style: TextStyle(
+                height: 5,
                 decoration: TextDecoration.underline,
               ),
             ),

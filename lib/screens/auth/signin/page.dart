@@ -1,3 +1,4 @@
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 
 class SignInPage extends StatelessWidget {
@@ -11,9 +12,18 @@ class SignInPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text(
-              'Bem-vindo de volta ao Flary!',
-              style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
+            AnimatedTextKit(
+              //documentação que usei de base: https://medium.com/@flutternewshub/animated-text-kit-bring-texts-to-life-in-flutter-with-style-16ab19d04218
+              animatedTexts: [
+                TypewriterAnimatedText(
+                  'Bem-vindo de volta ao Flary!!',
+                  textStyle: const TextStyle(
+                    fontSize: 32.0,
+                    fontWeight: FontWeight.bold,
+                  ),
+                  speed: const Duration(milliseconds: 100),
+                ),
+              ],
             ),
             const Text(
                 'Olha quem apareceu! Bora botar pra quebrar e fazer isso aqui acontecer de novo!'),
@@ -37,6 +47,7 @@ class SignInPage extends StatelessWidget {
             const Text(
               'Não Tem Uma Conta?', //só lembrando que ainda falta adicionar a função do onPressed que leve pro SignUp
               style: TextStyle(
+                height: 5,
                 decoration: TextDecoration.underline,
               ),
             ),

@@ -11,6 +11,7 @@ dependencies:
     sdk: flutter
   flutter_native_splash: ^2.4.3
   shadcn_ui: ^0.16.3
+  animated_text_kit: ^4.2.2
 
 dev_dependencies:
   flutter_test:
@@ -20,7 +21,7 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - assets/images/
+   # - assets/images/
     - assets/fonts/
 
   fonts:
@@ -34,7 +35,7 @@ flutter:
        - asset: assets/fonts/Mulish-Medium.ttf
        - asset: assets/fonts/Mulish-Black.ttf
        - asset: assets/fonts/Mulish-ExtraBold.ttf
-       - asset: assets/fonts/Mulish-Thin.ttf
+   #    - asset: assets/fonts/Mulish-Thin.ttf
 
 flutter_native_splash:
   # This package generates native code to customize Flutter's default white native splash screen
