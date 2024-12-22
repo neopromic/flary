@@ -6,12 +6,17 @@ class SignInPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Login')),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            const Text('Bem-vindo de volta ao Flary!',
+              style: TextStyle(
+                fontSize: 35,
+                fontWeight: FontWeight.bold),
+            ),
+            const Text('   Olha quem apareceu! Bora botar pra quebrar e fazer isso aqui acontecer de novo!'),
             const TextField(
               decoration: InputDecoration(labelText: 'Email'),
             ),
