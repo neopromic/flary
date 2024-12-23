@@ -1,8 +1,9 @@
+import 'package:flary/_constants/styles.dart';
 import 'package:flary/screens/auth/signup/page.dart';
 import 'package:flary/screens/onboarding/page.dart';
 import 'package:flutter/material.dart';
 import 'package:flary/screens/auth/signin/page.dart';
-import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:shadcn_ui/shadcn_ui.dart';
 
 void main() {
   runApp(const MainApp());
@@ -13,10 +14,13 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return ShadApp.material(
       title: 'Flary',
       home: const OnBoarding(),
-      theme: ThemeData(brightness: Brightness.dark, useMaterial3: true),
+      darkTheme: ShadThemeData(
+          colorScheme:
+              const ShadSlateColorScheme.dark(background: AppColors.background),
+          brightness: Brightness.dark),
       routes: {
         '/signin': (context) => const SignInPage(),
         '/signup': (context) => const SignUpPage(),
