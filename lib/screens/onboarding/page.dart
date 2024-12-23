@@ -23,7 +23,7 @@ class OnBoarding extends StatelessWidget {
                   const SizedBox(height: 16),
                   ElevatedButton(
                     onPressed: () {
-                      Navigator.pushNamed(context, '/signup');
+                      Navigator.pushNamed(context, '/signin');
                     },
                     child: const Text(
                       'Prosseguir',
