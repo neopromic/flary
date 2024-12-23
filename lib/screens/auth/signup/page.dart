@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:shadcn_ui/shadcn_ui.dart';
 
 class SignUpPage extends StatelessWidget {
   const SignUpPage({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final double screenWidth = MediaQuery.of(context).size.width;
+
     return Scaffold(
       appBar: AppBar(title: const Text('Cadastro')),
       body: Padding(
@@ -13,7 +16,7 @@ class SignUpPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text(
-              'E aí :)',
+              'E aí',
               style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
             ),
             const Text(
@@ -31,18 +34,18 @@ class SignUpPage extends StatelessWidget {
               obscureText: true,
             ),
             const SizedBox(height: 32),
-            ElevatedButton(
+            ShadButton(
+              width: screenWidth * 0.5,
               onPressed: () {
                 // Lógica para cadastrar o usuário
               },
               child: const Text('Cadastrar'),
             ),
-            const Text(
-              'Já Tem Uma Conta?', //só lembrando que ainda falta adicionar a função do onPressed que leve pro SignIn
-              style: TextStyle(
-                height: 5,
-                decoration: TextDecoration.underline,
-              ),
+            ShadButton.link(
+              onPressed: () {
+                Navigator.pushNamed(context, '/signin');
+              },
+              child: const Text('Já possui uma conta?'),
             ),
           ],
         ),
