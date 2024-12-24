@@ -9,7 +9,6 @@ class SignUpPage extends StatelessWidget {
     final double screenWidth = MediaQuery.of(context).size.width;
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Cadastro')),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
@@ -20,7 +19,7 @@ class SignUpPage extends StatelessWidget {
               style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
             ),
             const Text(
-                'Que daora ter você aqui! O Flary é o lugar pra trocar ideia e criar suas comunidades, sempre com segurança e privacidade. Se joga, entra num grupo ou cria o seu. Suas conversas estão seguras!'),
+                'Que daora ter você aqui! O Flary é o lugar pra trocar ideia e criar comunidades, com segurança e privacidade. Se joga, entre num grupo ou crie o seu!'),
             const TextField(
               decoration: InputDecoration(labelText: 'Nome'),
             ),
