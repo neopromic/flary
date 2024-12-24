@@ -25,9 +25,7 @@ class OnBoarding extends StatelessWidget {
                     onPressed: () {
                       Navigator.pushNamed(context, '/signin');
                     },
-                    child: const Text(
-                      'Prosseguir',
-                    ),
+                    child: const Text('Prosseguir'),
                   ),
                 ],
               ),

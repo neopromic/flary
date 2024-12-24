@@ -13,39 +13,44 @@ class SignInPage extends StatelessWidget {
 
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(20.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             AnimatedTextKit(
-              //documentação que usei de base: https://medium.com/@flutternewshub/animated-text-kit-bring-texts-to-life-in-flutter-with-style-16ab19d04218
+              //documentação que usei de base:
+              // https://pub.dev/documentation/animated_text_kit/latest/animated_text_kit/
+              // https://medium.com/@flutternewshub/animated-text-kit-bring-texts-to-life-in-flutter-with-style-16ab19d04218
               animatedTexts: [
                 TypewriterAnimatedText(
                   'Bem-vindo de volta ao Flary!',
                   textStyle: const TextStyle(
-                    fontSize: 32.0,
+                    fontSize: 26.0,
                     fontWeight: FontWeight.bold,
                   ),
-                  speed: const Duration(milliseconds: 100),
+                  speed: const Duration(milliseconds: 120),
                 ),
               ],
+              repeatForever: true,
+              pause: const Duration(milliseconds: 5000),
             ),
             Text(
               'Olha quem apareceu! Bora botar pra quebrar e fazer isso aqui acontecer de novo!',
               style: textMuted,
             ),
             const SizedBox(height: 16),
-            const TextField(
-              decoration: InputDecoration(labelText: 'Email'),
+            ShadInputFormField(
+              label: const Text('E-mail'),
+              placeholder: const Text('ex: johndoe@gmail.com'),
+              obscureText: true,
             ),
             const SizedBox(height: 16),
-            const TextField(
-              decoration: InputDecoration(labelText: 'Senha'),
+            ShadInputFormField(
+              label: const Text('Senha'),
+              placeholder: const Text('ex: JohnDoe123'),
               obscureText: true,
-              enableSuggestions: true,
-              keyboardType: TextInputType.emailAddress,
             ),
-            const SizedBox(height: 32),
+            const SizedBox(height: 16),
             ShadButton(
               width: screenWidth * 0.5,
               onPressed: () {
