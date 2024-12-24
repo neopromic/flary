@@ -1,4 +1,3 @@
-import 'package:flary/_constants/styles.dart';
 import 'package:flary/screens/auth/signup/page.dart';
 import 'package:flary/screens/onboarding/page.dart';
 import 'package:flutter/material.dart';
@@ -18,8 +17,7 @@ class MainApp extends StatelessWidget {
       title: 'Flary',
       home: const OnBoarding(),
       darkTheme: ShadThemeData(
-          colorScheme:
-              const ShadSlateColorScheme.dark(background: AppColors.background),
+          colorScheme: const ShadSlateColorScheme.dark(),
           brightness: Brightness.dark),
       routes: {
         '/signin': (context) => const SignInPage(),

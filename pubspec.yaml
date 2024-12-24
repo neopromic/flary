@@ -1,6 +1,6 @@
 name: flary
 description: "A new Flutter project."
-publish_to: 'none'
+publish_to: "none"
 version: 0.1.0
 
 environment:
@@ -17,25 +17,6 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^4.0.0
-
-flutter:
-  uses-material-design: true
-  assets:
-   # - assets/images/
-    - assets/fonts/
-
-  fonts:
-   - family: Mulish
-     fonts:
-       - asset: assets/fonts/Mulish-Regular.ttf
-       - asset: assets/fonts/Mulish-Bold.ttf
-       - asset: assets/fonts/Mulish-SemiBold.ttf
-       - asset: assets/fonts/Mulish-Light.ttf
-       - asset: assets/fonts/Mulish-ExtraLight.ttf
-       - asset: assets/fonts/Mulish-Medium.ttf
-       - asset: assets/fonts/Mulish-Black.ttf
-       - asset: assets/fonts/Mulish-ExtraBold.ttf
-   #    - asset: assets/fonts/Mulish-Thin.ttf
 
 flutter_native_splash:
   # This package generates native code to customize Flutter's default white native splash screen
@@ -61,7 +42,7 @@ flutter_native_splash:
 
   # The image parameter allows you to specify an image used in the splash screen.  It must be a
   # png file and should be sized for 4x pixel density.
-  #image: assets/splash.png
+  image: assets/images/logo.png
 
   # The branding property allows you to specify an image used as branding in the splash screen.
   # It must be a png file. It is supported for Android, iOS and the Web.  For Android 12,
@@ -71,7 +52,7 @@ flutter_native_splash:
   # To position the branding image at the bottom of the screen you can use bottom, bottomRight,
   # and bottomLeft. The default values is bottom if not specified or specified something else.
   #branding_mode: bottom
-  
+
   # Set the branding padding from the bottom of the screen.  The default value is 0
   # branding_bottom_padding: 24
 
@@ -95,10 +76,10 @@ flutter_native_splash:
     # App icon with an icon background: This should be 960×960 pixels, and fit within a circle
     # 640 pixels in diameter.
     # App icon without an icon background: This should be 1152×1152 pixels, and fit within a circle
-    # 768 pixels in diameter.  To fit a 1152x1152 image within a circle with a 768 diameter, simply 
+    # 768 pixels in diameter.  To fit a 1152x1152 image within a circle with a 768 diameter, simply
     # ensure that the most important design elements of your image are placed within a circular area
     # with a 768 diameter at the center of the 1152x1152 canvas.
-    #image: assets/android12splash.png
+    image: assets/images/logo.png
 
     # Splash screen background color.
     #color: "#42a5f5"
@@ -188,3 +169,22 @@ flutter_native_splash:
   #info_plist_files:
   #  - 'ios/Runner/Info-Debug.plist'
   #  - 'ios/Runner/Info-Release.plist'
+
+flutter:
+  uses-material-design: true
+  assets:
+    # - assets/images/
+    - assets/fonts/
+
+  fonts:
+    - family: Mulish
+      fonts:
+        - asset: assets/fonts/Mulish-Regular.ttf
+        - asset: assets/fonts/Mulish-Bold.ttf
+        - asset: assets/fonts/Mulish-SemiBold.ttf
+        - asset: assets/fonts/Mulish-Light.ttf
+        - asset: assets/fonts/Mulish-ExtraLight.ttf
+        - asset: assets/fonts/Mulish-Medium.ttf
+        - asset: assets/fonts/Mulish-Black.ttf
+        - asset: assets/fonts/Mulish-ExtraBold.ttf
+    #    - asset: assets/fonts/Mulish-Thin.ttf
